@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2024-06-13 11:38:36.111479",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_section",
+  "dob_column",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "full_name",
+  "date_of_birth",
+  "email",
+  "naming_series",
+  "gender",
+  "nationality",
+  "blood_group",
+  "default_address",
+  "combine_address",
+  "joining_date",
+  "active",
+  "create_user"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "dob_column",
+   "fieldtype": "Column Break",
+   "label": "DOB"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "options": "validate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOther"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality",
+   "reqd": 1
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "options": "A+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-"
+  },
+  {
+   "fieldname": "default_address",
+   "fieldtype": "Link",
+   "label": "Default Address",
+   "options": "Address"
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "create_user",
+   "fieldtype": "Button",
+   "label": "Create user"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": ".first_name.-.YYYY.-.MM .-.DD.-.####\n.first_name.-.MM.-.DD.-.YYYY.-.####\n.first_name.-.DD.-.YYYY .-.MM.-.####"
+  },
+  {
+   "fieldname": "student_section",
+   "fieldtype": "Section Break",
+   "label": "STUDENT"
+  },
+  {
+   "fieldname": "joining_date",
+   "fieldtype": "HTML",
+   "label": "Joining Date"
+  },
+  {
+   "fieldname": "combine_address",
+   "fieldtype": "HTML",
+   "label": "Combine Address"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-14 16:15:57.067398",
+ "modified_by": "Administrator",
+ "module": "Sample",
+ "name": "Student",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -219,6 +219,11 @@ app_license = "mit"
 # auth_hooks = [
 # 	"sample.auth.validate"
 # ]
+override_whitelisted_methods = {
+    "sample.api.handle_request" : "sample.api.handle_request",  
+  
+}
+
 
 # Automatically update python controller files with type annotations for this app.
 # export_python_type_annotations = True
@@ -226,4 +231,7 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+
+
+# my_app/hooks.py
 

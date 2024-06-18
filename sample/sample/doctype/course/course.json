@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:course_name",
+ "creation": "2024-06-17 12:39:42.672462",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "course_name",
+  "course_code",
+  "credits",
+  "academic_year",
+  "add_topics"
+ ],
+ "fields": [
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Course Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Course Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "credits",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Credits",
+   "reqd": 1
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "add_topics",
+   "fieldtype": "Table",
+   "label": "Add Topics",
+   "options": "Topics"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-17 15:22:20.321258",
+ "modified_by": "Administrator",
+ "module": "Sample",
+ "name": "Course",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

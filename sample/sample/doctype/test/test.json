@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-12 10:19:41.202798",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "firstname",
+  "lastname",
+  "fullname",
+  "address"
+ ],
+ "fields": [
+  {
+   "fieldname": "firstname",
+   "fieldtype": "Data",
+   "label": "FirstName"
+  },
+  {
+   "fieldname": "lastname",
+   "fieldtype": "Data",
+   "label": "LastName"
+  },
+  {
+   "fieldname": "fullname",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "FullName",
+   "options": "f\"{doc.firstname} +{doc.lastname}\""
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-17 16:47:45.691955",
+ "modified_by": "Administrator",
+ "module": "Sample",
+ "name": "Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
